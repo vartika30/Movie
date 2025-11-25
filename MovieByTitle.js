@@ -2,7 +2,7 @@ import useFetch from "/useFetch"
 
 const MovieByTitle = ({title}) => {
     const {data, loading, error} = useFetch(
-        `https://localhost:3000/movies/${title}`)
+        `/movies/${title}`)
 
 console.log(data)
 

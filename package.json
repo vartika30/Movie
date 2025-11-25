@@ -12,7 +12,7 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "mongoos": "^0.0.1-security",
+    "git": "^0.1.5",
     "mongoose": "^8.19.1"
   }
 }
