@@ -6,13 +6,18 @@ const Movie = require("./models/movie.models");
 
 app.use(express.json());
 
+const cors = require("cors");
+const corsOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
 initializeDatabase();
 
-const jsonData = fs.readFileSync("movies.json","utf-8");
-const moviesData = JSON.parse(jsonData);
 
-const jsonDataProfile = fs.readFileSync("profile.json","utf-8");
-const profilesData = JSON.parse(jsonDataProfile);
 
 
 //const newMovie = {
